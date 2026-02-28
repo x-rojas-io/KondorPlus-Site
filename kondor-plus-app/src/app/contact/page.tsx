@@ -22,19 +22,43 @@ export default function Contact() {
         e.preventDefault();
         setStatus("submitting");
 
-        // Fallback simple mailto logic identical to the legacy script 
-        // until a real backend (e.g. Resend/SendGrid) is connected via API route.
-        try {
-            const subject = encodeURIComponent(`Inquiry from ${formData.name}`);
-            const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nService Interested In: ${formData.service}\n\nProject Details:\n${formData.details}`);
-            window.location.href = `mailto:nestor.rojas@kondorplus.net?subject=${subject}&body=${body}`;
+        const web3formsKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 
-            // We set success even for mailto to show feedback
-            setTimeout(() => setStatus("success"), 500);
-            setTimeout(() => setStatus("idle"), 3000);
-            setFormData({ name: "", email: "", service: "Azure Data Engineering", details: "" });
+        if (!web3formsKey) {
+            console.error("Web3Forms access key is missing");
+            alert("Contact form configuration is missing. Please contact us directly at contact@kondorplus.net");
+            setStatus("error");
+            return;
+        }
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: web3formsKey,
+                    subject: `New Inquiry from ${formData.name}`,
+                    from_name: formData.name,
+                    ...formData,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (response.status === 200) {
+                setStatus("success");
+                setFormData({ name: "", email: "", service: "Azure Data Engineering", details: "" });
+            } else {
+                console.error("Web3Forms error:", result);
+                setStatus("error");
+            }
+
+            setTimeout(() => setStatus("idle"), 5000);
         } catch (error) {
-            console.error(error);
+            console.error("Submission failed:", error);
             setStatus("error");
         }
     };
@@ -55,8 +79,8 @@ export default function Contact() {
                         <div className="mb-8 p-4 bg-green-50 rounded-lg flex items-start gap-3 text-green-800 border border-green-200 fade-in visible">
                             <CheckCircle className="flex-shrink-0 mt-0.5" />
                             <div>
-                                <h3 className="font-bold">Opening Email Client</h3>
-                                <p className="text-sm">Your email client should open automatically with the pre-filled information.</p>
+                                <h3 className="font-bold">Message Sent!</h3>
+                                <p className="text-sm">Thank you for reaching out. We will get back to you shortly.</p>
                             </div>
                         </div>
                     )}
@@ -66,7 +90,7 @@ export default function Contact() {
                             <AlertCircle className="flex-shrink-0 mt-0.5" />
                             <div>
                                 <h3 className="font-bold">Something went wrong</h3>
-                                <p className="text-sm">We couldn&apos;t process your request. Please try again or email us directly at nestor.rojas@kondorplus.net.</p>
+                                <p className="text-sm">We couldn&apos;t process your request. Please try again or email us directly at contact@kondorplus.net.</p>
                             </div>
                         </div>
                     )}
