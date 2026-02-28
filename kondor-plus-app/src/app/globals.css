@@ -1,43 +1,83 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2c3e50;
-  --color-secondary: #3498db;
-  --color-text: #333333;
-  --color-light-bg: #f8f9fa;
-  --color-light-blue: #e0f2fe;
+  /* The Void (Dark Slate) */
+  --color-base: #0B1120;
+  --color-surface: #1e293b;
+
+  /* Text */
+  --color-text-main: #F1F5F9;
+  --color-text-muted: #94A3B8;
+
+  /* Cyber Blue (Accent) */
+  --color-accent: #38BDF8;
+  --color-accent-hover: #0EA5E9;
+
+  /* Gradients */
+  --color-electric-teal: #2DD4BF;
+  --color-electric-indigo: #818CF8;
 }
 
 @layer base {
   body {
-    @apply text-text bg-white antialiased;
+    @apply text-text-main bg-base antialiased;
+    /* Subtle background grid pattern indicating data structure */
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
 
 @layer components {
+
+  /* Typography */
   .section-title {
-    @apply text-center mb-12;
+    @apply text-center mb-16;
   }
+
   .section-title h2 {
-    @apply text-4xl font-bold text-primary mb-4;
+    @apply text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6;
   }
+
   .section-title p {
-    @apply text-lg text-gray-600;
+    @apply text-lg md:text-xl text-text-muted max-w-3xl mx-auto font-light leading-relaxed;
   }
-  
-  .card {
-    @apply flex flex-col h-full bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100;
+
+  /* Glassmorphism Panels */
+  .glass-panel {
+    @apply bg-surface/40 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .card-img {
-    @apply h-48 w-full object-cover;
+
+  .glass-panel:hover {
+    @apply border-accent/50 bg-surface/60;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px -10px rgba(56, 189, 248, 0.15);
   }
-  .card-body {
-    @apply flex flex-col flex-grow p-6;
+
+  /* Utility Gradients */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-electric-teal;
   }
-  .card-title {
-    @apply text-xl font-bold text-primary mb-3;
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
-  .card-text {
-    @apply flex-grow text-gray-600 mb-6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }

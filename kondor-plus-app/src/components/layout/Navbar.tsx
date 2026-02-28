@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Services", href: "/#services" },
     { name: "Our Work", href: "/projects" },
     { name: "Contact", href: "/contact" },
 ];
@@ -30,16 +32,16 @@ export default function Navbar() {
             className={cn(
                 "fixed top-0 w-full z-50 transition-all duration-300",
                 isScrolled || isMobileMenuOpen
-                    ? "bg-white shadow-md py-3"
-                    : "bg-white/95 backdrop-blur-sm py-4"
+                    ? "bg-[#0B1120]/95 backdrop-blur-md shadow-lg border-b border-white/5 py-3"
+                    : "bg-transparent py-4"
             )}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-12">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center">
-                        {/* Replace this div with an actual image once uploaded */}
-                        <span className="text-2xl font-bold tracking-tight text-[#2c3e50]">
+                    <Link href="/" className="flex items-center gap-2.5">
+                        <img src="/images/kondor-logo.jpg" alt="Kondor Plus Icon" className="w-8 h-8 object-cover rounded-md drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" />
+                        <span className="text-2xl font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors">
                             Kondor Plus
                         </span>
                     </Link>
@@ -53,8 +55,8 @@ export default function Navbar() {
                                     key={link.name}
                                     href={link.href}
                                     className={cn(
-                                        "text-[15px] font-medium transition-colors hover:text-[#3498db]",
-                                        isActive ? "text-[#3498db]" : "text-gray-700"
+                                        "text-[15px] font-medium transition-colors hover:text-[#38BDF8]",
+                                        isActive ? "text-[#38BDF8]" : "text-[#94A3B8]"
                                     )}
                                 >
                                     {link.name}
@@ -67,7 +69,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="text-gray-700 hover:text-[#3498db] focus:outline-none"
+                            className="text-[#94A3B8] hover:text-[#38BDF8] focus:outline-none transition-colors"
                         >
                             <span className="sr-only">Open main menu</span>
                             {isMobileMenuOpen ? (
@@ -84,10 +86,10 @@ export default function Navbar() {
             <div
                 className={cn(
                     "md:hidden transition-all duration-300 overflow-hidden",
-                    isMobileMenuOpen ? "max-h-60 border-t border-gray-100" : "max-h-0"
+                    isMobileMenuOpen ? "max-h-60 border-t border-white/10" : "max-h-0"
                 )}
             >
-                <div className="px-4 py-3 space-y-1 bg-white shadow-lg">
+                <div className="px-4 py-3 space-y-1 bg-[#0B1120] shadow-xl">
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href;
                         return (
@@ -96,10 +98,10 @@ export default function Navbar() {
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className={cn(
-                                    "block px-3 py-2 rounded-md text-base font-medium transition-colors hover:bg-gray-50",
+                                    "block px-3 py-2 rounded-md text-base font-medium transition-colors",
                                     isActive
-                                        ? "text-[#3498db] bg-[#e0f2fe]"
-                                        : "text-gray-700"
+                                        ? "text-[#38BDF8] bg-[#38BDF8]/10"
+                                        : "text-[#94A3B8] hover:text-white hover:bg-white/5"
                                 )}
                             >
                                 {link.name}
