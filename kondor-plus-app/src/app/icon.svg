@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#2c3e50" />
+  <text x="256" y="210" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="115" font-weight="900" fill="#ffffff" text-anchor="middle" dominant-baseline="central">Kondor</text>
+  <text x="256" y="330" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="115" font-weight="900" fill="#3498db" text-anchor="middle" dominant-baseline="central">Plus</text>
+</svg>

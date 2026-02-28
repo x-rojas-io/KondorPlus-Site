@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-text: #333333;
+  --color-light-bg: #f8f9fa;
+  --color-light-blue: #e0f2fe;
+}
+
+@layer base {
+  body {
+    @apply text-text bg-white antialiased;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-center mb-12;
+  }
+  .section-title h2 {
+    @apply text-4xl font-bold text-primary mb-4;
+  }
+  .section-title p {
+    @apply text-lg text-gray-600;
+  }
+  
+  .card {
+    @apply flex flex-col h-full bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100;
+  }
+  .card-img {
+    @apply h-48 w-full object-cover;
+  }
+  .card-body {
+    @apply flex flex-col flex-grow p-6;
+  }
+  .card-title {
+    @apply text-xl font-bold text-primary mb-3;
+  }
+  .card-text {
+    @apply flex-grow text-gray-600 mb-6;
+  }
+}
