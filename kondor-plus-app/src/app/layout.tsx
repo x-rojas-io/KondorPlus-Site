@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://kondorplus.net'),
   title: {
-    default: "Kondor Plus Consulting | Data Engineering & AI Solutions",
+    default: "Kondor Plus Consulting | Agile Data Platforms & Gemini AI",
     template: "%s | Kondor Plus Consulting",
   },
-  description: "Machine Learning, RAG Apps, and Data Engineering Solutions by Nestor Rojas. 14707761 CANADA INC.",
+  description: "Modern Data Platforms, Google Gemini AI Agents, Supabase Data Hubs, and Bespoke Web Applications by Nestor Rojas. 14707761 CANADA INC.",
   openGraph: {
-    title: "Kondor Plus Consulting | Data Engineering & AI Solutions",
-    description: "Machine Learning, RAG Apps, and Data Engineering Solutions by Nestor Rojas. 14707761 CANADA INC.",
+    title: "Kondor Plus Consulting | Agile Data Platforms & Gemini AI",
+    description: "Modern Data Platforms, Google Gemini AI Agents, Supabase Data Hubs, and Bespoke Web Applications by Nestor Rojas. 14707761 CANADA INC.",
     url: 'https://kondorplus.net',
     siteName: 'Kondor Plus Consulting',
     locale: 'en_US',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Kondor Plus Consulting | Data Engineering & AI Solutions",
-    description: "Machine Learning, RAG Apps, and Data Engineering Solutions by Nestor Rojas. 14707761 CANADA INC.",
+    title: "Kondor Plus Consulting | Agile Data Platforms & Gemini AI",
+    description: "Modern Data Platforms, Google Gemini AI Agents, Supabase Data Hubs, and Bespoke Web Applications by Nestor Rojas. 14707761 CANADA INC.",
   },
 };
 

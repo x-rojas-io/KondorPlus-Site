@@ -40,7 +40,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-12">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2.5">
-                        <img src="/images/kondor-logo.jpg" alt="Kondor Plus Icon" className="w-8 h-8 object-cover rounded-md drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" />
+                        <Image src="/images/kondor-logo.jpg" alt="Kondor Plus Icon" width={32} height={32} unoptimized className="w-8 h-8 object-cover rounded-md drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" />
                         <span className="text-2xl font-bold tracking-tight text-white hover:text-[#38BDF8] transition-colors">
                             Kondor Plus
                         </span>

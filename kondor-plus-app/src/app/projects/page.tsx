@@ -5,48 +5,56 @@ import { ExternalLink, Github } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Our Work",
-    description: "Explore our case studies spanning Data Engineering, AI Solutions, internal .NET platforms, and commercial web applications.",
+    description: "Explore our case studies spanning modern data platforms, Gemini AI integrations, and bespoke client web applications.",
 };
 
 const projects = [
     {
         title: "Sothis Therapeutic",
-        description: "A comprehensive web application for therapeutic services and client management.",
-        image: "/images/react.jpg", // Using a placeholder since we don't have the real image yet
+        description: "A high-performance therapeutic platform with secure client management, appointment scheduling, and real-time workflows powered by Supabase and Next.js on Vercel.",
+        image: "/images/react.jpg",
         link: "https://sothistherapeutic.com",
-        tags: ["Web App", "Client Management"],
+        tags: ["Next.js", "Supabase", "Vercel", "Client Portal"],
         isExternal: true,
+    },
+    {
+        title: "Coselat Platform",
+        description: "Modern data-driven operational platform streamlining service delivery, member onboarding, and automated client workflows on lean cloud infrastructure.",
+        image: "/images/kondor-data-pipeline.jpg",
+        link: "#",
+        tags: ["Next.js", "Supabase", "Gemini AI", "Operations"],
+        isExternal: false,
     },
     {
         title: "Nouriva Club",
-        description: "A wellness and lifestyle platform tailored for member engagement and seamless user experience.",
-        image: "/images/react.jpg",
+        description: "A wellness and lifestyle platform tailored for member engagement, real-time community interaction, and seamless cross-device performance.",
+        image: "/images/yellowrubik.jpg",
         link: "https://nouriva.club",
-        tags: ["Web App", "Wellness Platform"],
+        tags: ["Next.js", "Vercel", "Community Hub"],
         isExternal: true,
     },
     {
-        title: "RAG Q&A System",
-        description: "Building a Q&A System for YouTube Videos with Python, LangChain, and GPT-3.5.",
+        title: "Gemini Knowledge & RAG Assistant",
+        description: "Intelligent question-answering and document semantic search engine powered by Google Gemini, Python, and pgvector embeddings.",
         image: "/images/rag_sys.jpg",
         link: "https://github.com/nestorojas/rag-system",
-        tags: ["Python", "LLMs", "RAG"],
+        tags: ["Google Gemini", "pgvector", "RAG", "AI Automation"],
         isExternal: true,
     },
     {
         title: "Enterprise .NET Core Platforms",
-        description: "Scalable backend systems and microservices built with ASP.NET Core for enterprise clients under NDA.",
+        description: "Scalable backend systems, high-throughput microservices, and cloud integration pipelines built for enterprise clients under NDA.",
         image: "/images/di.jpg",
         link: "#",
-        tags: ["C#", ".NET Core", "Architecture"],
+        tags: ["C#", ".NET Core", "Cloud Architecture"],
         isExternal: false,
     },
     {
-        title: "ReactJS Interactive Web Apps",
-        description: "Mastering the art of building dynamic and interactive web applications.",
+        title: "Interactive UI & Component Labs",
+        description: "A laboratory of reusable, dynamic UI architectures, real-time state management, and bespoke dashboard widgets.",
         image: "/images/react.jpg",
         link: "https://github.com/nestorojas/React_Labs",
-        tags: ["React", "JavaScript", "Frontend"],
+        tags: ["React 19", "TypeScript", "Tailwind CSS"],
         isExternal: true,
     }
 ];
@@ -56,11 +64,11 @@ export default function Projects() {
         <div className="container mx-auto px-4 py-24 relative z-10">
             <div className="section-title mb-16 relative">
                 <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 text-[#38BDF8] text-sm font-semibold tracking-wider uppercase backdrop-blur-md">
-                    Case Studies
+                    Case Studies & Platforms
                 </div>
                 <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Our Work</h1>
                 <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
-                    Explore our case studies spanning Data Engineering, AI Solutions, internal .NET platforms, and commercial web applications.
+                    Explore our deployed platforms spanning modern data hubs, Gemini-powered AI workflows, and bespoke web applications.
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#38BDF8] to-[#2DD4BF] mx-auto mt-6 rounded-full"></div>
             </div>

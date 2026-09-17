@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send, CheckCircle, AlertCircle, ChevronRight, ChevronLeft, Database, Terminal, BarChart, Server, GitMerge, Settings, TrendingUp } from "lucide-react";
 import Image from "next/image";
 
-type FocusArea = "Azure Data Engineering" | "AI / ML Infrastructure" | "Modern Data Analytics" | "Bespoke Web Applications" | "";
+type FocusArea = "Modern Cloud Data Hub (Supabase)" | "Gemini AI & Smart Automation" | "Actionable Realtime Analytics" | "Custom Web App / Client Portal (Next.js)" | "";
 type ProjectStage = "Planning & Architecture" | "Modernizing Existing Systems" | "Scaling & Performance Tuning" | "";
 
 export default function ContactWizard() {
@@ -100,7 +100,7 @@ export default function ContactWizard() {
                         Engineer Your <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] to-[#2DD4BF]">Data Future</span>
                     </h1>
                     <p className="text-lg md:text-xl text-[#94A3B8] max-w-md">
-                        We don&apos;t just build pipelines; we orchestrate the entire journey from raw ingestion to the bespoke applications through which you see your business.
+                        From lean Supabase data hubs and Google Gemini AI agents to custom client portals on Vercel—we build the agile platforms through which you run your business.
                     </p>
                 </div>
             </div>
@@ -170,21 +170,21 @@ export default function ContactWizard() {
                                 <p className="text-[#94A3B8] mb-8">Select the core technical domain we can assist you with.</p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-fr">
-                                    <button onClick={() => handleSelectService("Azure Data Engineering")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Azure Data Engineering" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
-                                        <Database className={formData.service === "Azure Data Engineering" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
-                                        <span className={`font-semibold ${formData.service === "Azure Data Engineering" ? "text-white" : "text-[#94A3B8]"}`}>Azure Data Engineering</span>
+                                    <button onClick={() => handleSelectService("Modern Cloud Data Hub (Supabase)")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Modern Cloud Data Hub (Supabase)" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
+                                        <Database className={formData.service === "Modern Cloud Data Hub (Supabase)" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
+                                        <span className={`font-semibold ${formData.service === "Modern Cloud Data Hub (Supabase)" ? "text-white" : "text-[#94A3B8]"}`}>Modern Data Hub (Supabase)</span>
                                     </button>
-                                    <button onClick={() => handleSelectService("AI / ML Infrastructure")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "AI / ML Infrastructure" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
-                                        <Terminal className={formData.service === "AI / ML Infrastructure" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
-                                        <span className={`font-semibold ${formData.service === "AI / ML Infrastructure" ? "text-white" : "text-[#94A3B8]"}`}>AI / ML Infrastructure</span>
+                                    <button onClick={() => handleSelectService("Gemini AI & Smart Automation")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Gemini AI & Smart Automation" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
+                                        <Terminal className={formData.service === "Gemini AI & Smart Automation" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
+                                        <span className={`font-semibold ${formData.service === "Gemini AI & Smart Automation" ? "text-white" : "text-[#94A3B8]"}`}>Gemini AI & Automation</span>
                                     </button>
-                                    <button onClick={() => handleSelectService("Modern Data Analytics")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Modern Data Analytics" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
-                                        <BarChart className={formData.service === "Modern Data Analytics" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
-                                        <span className={`font-semibold ${formData.service === "Modern Data Analytics" ? "text-white" : "text-[#94A3B8]"}`}>Modern Data Analytics</span>
+                                    <button onClick={() => handleSelectService("Actionable Realtime Analytics")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Actionable Realtime Analytics" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
+                                        <BarChart className={formData.service === "Actionable Realtime Analytics" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
+                                        <span className={`font-semibold ${formData.service === "Actionable Realtime Analytics" ? "text-white" : "text-[#94A3B8]"}`}>Realtime Analytics & Insights</span>
                                     </button>
-                                    <button onClick={() => handleSelectService("Bespoke Web Applications")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Bespoke Web Applications" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
-                                        <Server className={formData.service === "Bespoke Web Applications" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
-                                        <span className={`font-semibold ${formData.service === "Bespoke Web Applications" ? "text-white" : "text-[#94A3B8]"}`}>Bespoke Web Applications</span>
+                                    <button onClick={() => handleSelectService("Custom Web App / Client Portal (Next.js)")} className={`h-full text-left p-5 rounded-xl border flex flex-col gap-3 transition-all duration-300 ${formData.service === "Custom Web App / Client Portal (Next.js)" ? "bg-[#38BDF8]/10 border-[#38BDF8] shadow-[0_0_15px_-3px_rgba(56,189,248,0.3)]" : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"}`}>
+                                        <Server className={formData.service === "Custom Web App / Client Portal (Next.js)" ? "text-[#38BDF8]" : "text-[#94A3B8]"} size={24} />
+                                        <span className={`font-semibold ${formData.service === "Custom Web App / Client Portal (Next.js)" ? "text-white" : "text-[#94A3B8]"}`}>Custom Web App / Portal</span>
                                     </button>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@ export default function ContactWizard() {
                                         <GitMerge className={formData.stage === "Planning & Architecture" ? "text-[#2DD4BF]" : "text-[#94A3B8]"} size={24} />
                                         <div>
                                             <div className={`font-bold ${formData.stage === "Planning & Architecture" ? "text-white" : "text-[#94A3B8]"}`}>Planning & Architecture</div>
-                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Starting fresh or building a new product feature.</div>
+                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Starting fresh, building an MVP, or launching a new product.</div>
                                         </div>
                                     </button>
 
@@ -209,7 +209,7 @@ export default function ContactWizard() {
                                         <Settings className={formData.stage === "Modernizing Existing Systems" ? "text-[#2DD4BF]" : "text-[#94A3B8]"} size={24} />
                                         <div>
                                             <div className={`font-bold ${formData.stage === "Modernizing Existing Systems" ? "text-white" : "text-[#94A3B8]"}`}>Modernizing Existing Systems</div>
-                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Refactoring legacy pipelines or unblocking tech debt.</div>
+                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Migrating spreadsheets/legacy tools to Supabase or adding AI.</div>
                                         </div>
                                     </button>
 
@@ -217,7 +217,7 @@ export default function ContactWizard() {
                                         <TrendingUp className={formData.stage === "Scaling & Performance Tuning" ? "text-[#2DD4BF]" : "text-[#94A3B8]"} size={24} />
                                         <div>
                                             <div className={`font-bold ${formData.stage === "Scaling & Performance Tuning" ? "text-white" : "text-[#94A3B8]"}`}>Scaling & Performance Tuning</div>
-                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Preparing infrastructure for rapid growth and higher loads.</div>
+                                            <div className="text-sm text-[#94A3B8]/70 mt-1">Preparing infrastructure for rapid growth and higher user traffic.</div>
                                         </div>
                                     </button>
                                 </div>
@@ -261,7 +261,7 @@ export default function ContactWizard() {
                                     </div>
 
                                     <div className="space-y-1.5">
-                                        <label htmlFor="details" className="text-sm font-medium text-[#94A3B8]">Project Telemetry (Optional but helpful)</label>
+                                        <label htmlFor="details" className="text-sm font-medium text-[#94A3B8]">Project Telemetry (Optional)</label>
                                         <textarea
                                             id="details"
                                             name="details"
@@ -269,7 +269,7 @@ export default function ContactWizard() {
                                             value={formData.details}
                                             onChange={handleInputChange}
                                             className="w-full px-4 py-3 rounded-xl border border-white/10 bg-[#0B1120]/50 text-white focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent transition-all outline-none resize-y placeholder-[#94A3B8]/30"
-                                            placeholder="Timeline, specific technologies (ADF, Databricks, Next.js), or immediate pain points."
+                                            placeholder="Timeline, specific stack (Supabase, Gemini, Vercel, Next.js), or immediate operational goals."
                                         />
                                     </div>
 
@@ -318,4 +318,3 @@ export default function ContactWizard() {
         </div>
     );
 }
-
