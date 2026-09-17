@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: 'https://kondorplus.net/about',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: 'https://kondorplus.net/contact',
             lastModified: new Date(),
             changeFrequency: 'yearly',

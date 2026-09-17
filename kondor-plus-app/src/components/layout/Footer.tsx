@@ -46,6 +46,14 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
+                                    href="/about"
+                                    className="text-[#94A3B8] hover:text-[#38BDF8] transition-colors"
+                                >
+                                    About
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href="/contact"
                                     className="text-[#94A3B8] hover:text-[#38BDF8] transition-colors"
                                 >
@@ -60,14 +68,16 @@ export default function Footer() {
                         <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
                         <div className="flex space-x-4">
                             <a
-                                href="#"
+                                href="https://linkedin.com/in/x-rojas-io"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="w-10 h-10 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#38BDF8]/20 hover:border-[#38BDF8]/50 hover:text-[#38BDF8] transition-all duration-300"
                                 aria-label="LinkedIn"
                             >
                                 <Linkedin size={20} />
                             </a>
                             <a
-                                href="https://github.com/nestorojas"
+                                href="https://github.com/x-rojas-io"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="w-10 h-10 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center hover:bg-[#38BDF8]/20 hover:border-[#38BDF8]/50 hover:text-[#38BDF8] transition-all duration-300"
