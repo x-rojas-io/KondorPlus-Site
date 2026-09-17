@@ -61,16 +61,16 @@ export default function AboutPage() {
                             <div className="w-10 h-10 rounded-xl bg-[#38BDF8]/10 border border-[#38BDF8]/30 flex items-center justify-center text-[#38BDF8]">
                                 <Sparkles size={20} />
                             </div>
-                            <h2 className="text-2xl font-bold text-white">The Engineering Philosophy</h2>
+                            <h2 className="text-2xl font-bold text-white">Closing the Technology Gap</h2>
                         </div>
                         <p className="text-[#94A3B8] text-lg leading-relaxed mb-6">
-                            I am a Senior Software Engineer with over a decade of experience architecting data platforms, distributed data pipelines, and production web applications.
+                            I am a Senior Software Engineer with over a decade of experience architecting data platforms, applied AI workflows, and high-performance web applications.
                         </p>
                         <p className="text-[#94A3B8] text-lg leading-relaxed mb-6">
-                            At <strong className="text-white">Kondor Plus Consulting</strong>, I spearhead the <span className="text-[#38BDF8] font-semibold">&ldquo;Pipeline to Pixel&rdquo;</span> standard. I believe enterprise data should never be trapped in unreachable warehouses or held back by prohibitive infrastructure overhead. 
+                            I believe that growing businesses shouldn&apos;t need a multi-million dollar IT budget to leverage the power of modern data intelligence and AI. At <strong className="text-white">Kondor Plus Consulting</strong>, we build custom systems directly around your unique business data—extracting it from chaotic spreadsheets, legacy tools, and disconnected SaaS apps into structured, intelligent cloud hubs.
                         </p>
                         <p className="text-[#94A3B8] text-lg leading-relaxed">
-                            For growing businesses and modern digital platforms (like <span className="text-white font-medium">Sothis Therapeutic</span> and <span className="text-white font-medium">Coselat</span>), we deploy lean, ultra-fast architectures powered by <strong className="text-white">Vercel</strong>, <strong className="text-white">Supabase (PostgreSQL &amp; pgvector)</strong>, and <strong className="text-white">Google Gemini AI</strong>—delivering high-leverage data intelligence with zero server maintenance.
+                            Through our <span className="text-[#38BDF8] font-semibold">&ldquo;Pipeline to Pixel&rdquo;</span> approach, we connect lean data infrastructure (<strong className="text-white">Supabase</strong> &amp; <strong className="text-white">Google Gemini</strong>) with tailor-made client web platforms (<strong className="text-white">Next.js 16</strong> on <strong className="text-white">Vercel</strong>). The result: actionable customer insights, automated operations, and measurable growth.
                         </p>
                     </div>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
                             <li className="flex items-start gap-3">
                                 <CheckCircle size={18} className="text-[#2DD4BF] flex-shrink-0 mt-1" />
                                 <span className="text-[#94A3B8] text-sm leading-relaxed">
-                                    <strong className="text-white">AI-Native Platforms:</strong> Architected Gemini RAG pipelines and vector search workflows for automated document intelligence.
+                                    <strong className="text-white">AI-Native Platforms:</strong> Architected Gemini RAG pipelines and vector search workflows for automated document intelligence and customer support.
                                 </span>
                             </li>
                             <li className="flex items-start gap-3">

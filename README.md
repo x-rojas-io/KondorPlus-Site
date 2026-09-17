@@ -10,7 +10,7 @@
 ![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI_Agents-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)
 
-**Agile Data Platforms, Gemini AI Intelligence & Bespoke Web Applications**
+**Custom Data Systems, Applied AI Automations & Bespoke Web Platforms**
 
 *Operated by Nestor Rojas | 14707761 CANADA INC.*
 
@@ -22,44 +22,47 @@
 
 ## 🚀 Overview
 
-**Kondor Plus Consulting** is an agile data and product studio. We bridge the gap between lean data infrastructure and modern web experiences with our core philosophy: **"From Pipeline to Pixel"**.
+**Kondor Plus Consulting** is an agile data and product studio. We close the gap between expensive enterprise technology and growing businesses with our core philosophy: **"From Pipeline to Pixel"**.
 
-We empower growing businesses and platforms (e.g., **Sothis Therapeutic**, **Coselat**, **Nouriva Club**) to deploy enterprise-grade data intelligence without the excessive cost and complexity of heavyweight distributed systems. Our modern architecture unites **Vercel edge hosting**, **Supabase (managed PostgreSQL & pgvector)**, and **Google Gemini AI agents** into fast, scalable, and self-managing platforms.
+We engineer custom systems directly around your business data—migrating fragmented spreadsheets (Excel, Google Sheets), siloed SaaS tools (Stripe, QuickBooks, POS), and PDF archives into clean, structured PostgreSQL (Supabase) data hubs. We then layer **Google Gemini AI agents** and **Next.js 16 web applications** on top to uncover customer patterns, automate back-office operations, and drive revenue growth with zero server maintenance.
 
 ---
 
-## 🛠️ Core Pillars & Technical Expertise
+## 🛠️ The 6 Core Service Pillars
 
 ```
-+-----------------------------------------------------------------------------------+
-|                                FROM PIPELINE TO PIXEL                             |
-+------------------------------------+----------------------------------------------+
-| [1] Modern Cloud Data Hubs         | [2] Gemini AI & Smart Automation             |
-| - Supabase & Managed PostgreSQL    | - Google Gemini 2.0 / Flash / Pro Models     |
-| - Row-Level Security & Auth        | - RAG & pgvector Semantic Search             |
-| - Realtime Subscriptions & Storage | - Autonomous Workflow & Document Agents      |
-+------------------------------------+----------------------------------------------+
-| [3] Actionable Realtime Analytics  | [4] Custom Portals & Web Apps                |
-| - Embedded Operational Metrics     | - Next.js 16 (App Router), React 19, TS      |
-| - Zero-License Custom Dashboards   | - Vercel Global Edge Network Deployment      |
-| - High-Volume Data Aggregations    | - Bespoke Client & Membership Portals        |
-+------------------------------------+----------------------------------------------+
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                       WHAT WE DO AT KONDOR PLUS                                        │
+├───────────────────────────────────┬───────────────────────────────────┬────────────────────────────────┤
+│ [1] DATA MIGRATION & UNIFICATION  │ [2] AI PROCESS AUTOMATION         │ [3] ACTIONABLE REALTIME METRICS│
+│ Migrating disconnected Google     │ Reviewing business bottlenecks    │ Custom operational dashboards  │
+│ Sheets, Excel, Stripe, QuickBooks,│ and deploying Google Gemini agents│ tracking customer retention,   │
+│ & PDF archives into Supabase hubs.│ to automate repetitive workflows. │ revenue velocity, & unit ROI.  │
+├───────────────────────────────────┼───────────────────────────────────┼────────────────────────────────┤
+│ [4] PREDICTIVE ML & DECISION LOGIC│ [5] ON-DEMAND RAG KNOWLEDGE       │ [6] BESPOKE MISSION WEB PORTALS│
+│ Inference-ready ML pipelines to   │ 24/7 intelligent AI assistants    │ Turnkey, high-speed platforms  │
+│ forecast customer churn, demand,  │ and semantic search grounded in   │ (like Sothis & Coselat)        │
+│ and optimize critical decisions.  │ your verified business data.      │ deployed globally on Vercel.   │
+└───────────────────────────────────┴───────────────────────────────────┴────────────────────────────────┘
 ```
 
-1. **Modern Cloud Data Hubs (Supabase & Postgres)**: Centralizing operational data in secure, managed PostgreSQL instances with built-in Auth, Row-Level Security, instant REST/GraphQL APIs, and zero DevOps overhead.
-2. **Gemini AI & Smart Automation**: Architecting AI workflows, intelligent document extraction, customer assistants, and semantic search powered by Google Gemini and `pgvector` embeddings.
-3. **Actionable Realtime Analytics**: Delivering real-time business telemetry and embedded operational dashboards directly inside client applications without expensive BI licensing.
-4. **Custom Portals & Web Applications**: Developing blazing-fast, responsive web platforms and client management portals deployed on Vercel's global edge network.
+1. **Data Migration & Centralization**: Extracting data from Excel, Google Sheets, Stripe, QuickBooks, POS, and PDF invoices into clean, managed PostgreSQL (Supabase) data hubs with strict data integrity.
+2. **AI-Driven Process Automation**: Auditing business operations and implementing Google Gemini AI agents to eliminate manual data entry and repetitive back-office tasks.
+3. **Actionable Realtime Analytics**: Embedded operational dashboards that track sales velocity, customer churn, and inventory without expensive monthly BI software licenses.
+4. **Predictive Machine Learning Pipelines**: Deploying inference-ready ML pipelines to anticipate customer behavior, forecast demand, and score leads.
+5. **Customer-Facing RAG & Knowledge Systems**: 24/7 intelligent AI conversational assistants and semantic search grounded in your verified company data.
+6. **Bespoke Web Applications & Portals**: Custom, branded client management portals, membership platforms (like *Sothis Therapeutic*, *Coselat*, *Nouriva Club*), and internal tools deployed on Vercel's global edge network.
 
 ---
 
 ## ✨ Featured Platforms & Case Studies
 
-- **Sothis Therapeutic**: Full-featured therapeutic practice platform with secure client management, appointment scheduling, and real-time records on Supabase and Next.js.
-- **Coselat Platform**: Data-driven operations platform streamlining client onboarding, service delivery, and automated communications.
-- **Nouriva Club**: Member lifestyle platform with real-time community engagement, events, and responsive mobile-first UI.
-- **Gemini Knowledge & RAG Assistant**: Intelligent semantic search and question-answering system using Google Gemini and vector embeddings.
-- **Enterprise .NET Core Platforms**: High-throughput backend systems and microservices for large-scale enterprise clients.
+- **Sothis Therapeutic**: Custom therapeutic practice portal centralizing intake forms, client history, and real-time scheduling on Supabase + Next.js.
+- **Coselat Platform**: Operational data hub uncovering service delivery patterns and automating member onboarding.
+- **Nouriva Club**: Member lifestyle platform built around wellness engagement data, community interaction, and real-time event updates.
+- **Gemini Knowledge & RAG Assistant**: Intelligent document lookup and customer inquiry semantic search engine.
+- **National Pension Data Quality & Deduplication**: High-volume record linkage and identity resolution pipelines (7M+ duplicate identities resolved).
+- **Enterprise .NET Core Platforms**: Robust microservices and cloud infrastructure handling high-volume transaction data.
 
 ---
 
@@ -68,20 +71,19 @@ We empower growing businesses and platforms (e.g., **Sothis Therapeutic**, **Cos
 ```text
 KondorPlus-Site/
 ├── README.md                      # Root repository documentation
+├── x-rojas-io.md                  # GitHub profile README
 └── kondor-plus-app/               # Next.js 16 web application
     ├── public/                    # Static media, icons, and hero video
     │   ├── images/                # High-resolution project imagery & logos
     │   └── videos/                # Background video assets (landing_background.mp4)
     ├── src/
     │   ├── app/                   # Next.js App Router
+    │   │   ├── about/             # Founder story, philosophy & tech stack
     │   │   ├── contact/           # Interactive 3-step consultation wizard
-    │   │   │   ├── layout.tsx     # Route-specific metadata
-    │   │   │   └── page.tsx       # Dynamic wizard logic & Web3Forms integration
     │   │   ├── projects/          # Case studies & portfolio showcase
-    │   │   │   └── page.tsx
     │   │   ├── globals.css        # Tailwind v4 theme, CSS variables & animations
     │   │   ├── layout.tsx         # Root layout with global navbar & footer
-    │   │   ├── page.tsx           # Hero landing page & technical domains
+    │   │   ├── page.tsx           # Hero landing page & 6-pillar service domains
     │   │   ├── robots.ts          # Dynamic search engine crawler instructions
     │   │   └── sitemap.ts         # Dynamic XML sitemap generator
     │   ├── components/
@@ -167,8 +169,8 @@ To deploy your own instance:
 - **Company**: Kondor Plus Consulting (14707761 CANADA INC.)
 - **Website**: [kondorplus.net](https://kondorplus.net)
 - **Direct Email**: [contact@kondorplus.net](mailto:contact@kondorplus.net)
-- **GitHub**: [@nestorojas](https://github.com/nestorojas)
-- **LinkedIn**: [Nestor Rojas](https://linkedin.com)
+- **GitHub**: [@x-rojas-io](https://github.com/x-rojas-io)
+- **LinkedIn**: [Nestor Rojas](https://linkedin.com/in/x-rojas-io)
 
 ---
 

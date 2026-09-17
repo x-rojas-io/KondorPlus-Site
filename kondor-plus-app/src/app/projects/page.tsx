@@ -5,21 +5,21 @@ import { ExternalLink, Github } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Our Work",
-    description: "Explore our case studies spanning modern data platforms, Gemini AI integrations, and bespoke client web applications.",
+    description: "Explore our case studies spanning custom data systems, Gemini AI automations, and bespoke client web applications.",
 };
 
 const projects = [
     {
         title: "Sothis Therapeutic",
-        description: "A high-performance therapeutic platform with secure client management, appointment scheduling, and real-time workflows powered by Supabase and Next.js on Vercel.",
+        description: "A custom therapeutic practice platform centralizing client intake forms, medical history, and real-time appointment scheduling into a secure Supabase PostgreSQL data hub on Vercel.",
         image: "/images/react.jpg",
         link: "https://sothistherapeutic.com",
-        tags: ["Next.js", "Supabase", "Vercel", "Client Portal"],
+        tags: ["Next.js 16", "Supabase", "PostgreSQL", "Client Portal"],
         isExternal: true,
     },
     {
         title: "Coselat Platform",
-        description: "Modern data-driven operational platform streamlining service delivery, member onboarding, and automated client workflows on lean cloud infrastructure.",
+        description: "Data-driven operations platform uncovering service delivery patterns, automating member onboarding, and centralizing scattered operational data with lean cloud infrastructure.",
         image: "/images/kondor-data-pipeline.jpg",
         link: "#",
         tags: ["Next.js", "Supabase", "Gemini AI", "Operations"],
@@ -27,35 +27,35 @@ const projects = [
     },
     {
         title: "Nouriva Club",
-        description: "A wellness and lifestyle platform tailored for member engagement, real-time community interaction, and seamless cross-device performance.",
+        description: "A wellness and lifestyle platform tailored for member engagement, real-time community interaction, and seamless cross-device performance built around member data.",
         image: "/images/yellowrubik.jpg",
         link: "https://nouriva.club",
-        tags: ["Next.js", "Vercel", "Community Hub"],
+        tags: ["Next.js", "Vercel", "Community Hub", "Realtime"],
         isExternal: true,
     },
     {
         title: "Gemini Knowledge & RAG Assistant",
-        description: "Intelligent question-answering and document semantic search engine powered by Google Gemini, Python, and pgvector embeddings.",
+        description: "Intelligent document retrieval and customer inquiry semantic search engine powered by Google Gemini and pgvector embeddings to provide instant, verified business answers.",
         image: "/images/rag_sys.jpg",
         link: "https://github.com/nestorojas/rag-system",
         tags: ["Google Gemini", "pgvector", "RAG", "AI Automation"],
         isExternal: true,
     },
     {
-        title: "Enterprise .NET Core Platforms",
-        description: "Scalable backend systems, high-throughput microservices, and cloud integration pipelines built for enterprise clients under NDA.",
+        title: "National Identity Resolution & Deduplication",
+        description: "Engineered high-volume record linkage and deduplication pipelines resolving 7M+ duplicate identities in a national pension database to restore absolute data integrity.",
         image: "/images/di.jpg",
         link: "#",
-        tags: ["C#", ".NET Core", "Cloud Architecture"],
+        tags: ["Data Quality", "Deduplication", "PostgreSQL", "Python"],
         isExternal: false,
     },
     {
-        title: "Interactive UI & Component Labs",
-        description: "A laboratory of reusable, dynamic UI architectures, real-time state management, and bespoke dashboard widgets.",
-        image: "/images/react.jpg",
-        link: "https://github.com/nestorojas/React_Labs",
-        tags: ["React 19", "TypeScript", "Tailwind CSS"],
-        isExternal: true,
+        title: "Enterprise .NET Core Platforms",
+        description: "Scalable backend systems, high-throughput microservices, and cloud integration pipelines built for enterprise clients with strict security and low latency.",
+        image: "/images/aspnetAPI.jpg",
+        link: "#",
+        tags: ["C#", ".NET Core", "Cloud Architecture"],
+        isExternal: false,
     }
 ];
 
@@ -64,11 +64,11 @@ export default function Projects() {
         <div className="container mx-auto px-4 py-24 relative z-10">
             <div className="section-title mb-16 relative">
                 <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 text-[#38BDF8] text-sm font-semibold tracking-wider uppercase backdrop-blur-md">
-                    Case Studies & Platforms
+                    Case Studies &amp; Platforms
                 </div>
                 <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Our Work</h1>
                 <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
-                    Explore our deployed platforms spanning modern data hubs, Gemini-powered AI workflows, and bespoke web applications.
+                    Explore our deployed systems spanning custom data hubs, Gemini-powered AI workflows, and bespoke web platforms.
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#38BDF8] to-[#2DD4BF] mx-auto mt-6 rounded-full"></div>
             </div>
@@ -95,7 +95,7 @@ export default function Projects() {
                                 ))}
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#38BDF8] transition-colors">{project.title}</h3>
-                            <p className="text-[#94A3B8] flex-grow mb-6 leading-relaxed">{project.description}</p>
+                            <p className="text-[#94A3B8] flex-grow mb-6 leading-relaxed text-sm">{project.description}</p>
 
                             {project.link !== "#" && (
                                 <Link

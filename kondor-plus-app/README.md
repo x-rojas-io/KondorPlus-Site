@@ -4,12 +4,14 @@ Frontend and web application layer for **Kondor Plus Consulting** ([kondorplus.n
 
 ---
 
-## Architecture Overview
+## Architecture & 6-Pillar Overview
 
-- **Hosting & Edge Delivery**: [Vercel](https://vercel.com)
-- **Data & Realtime Hub**: [Supabase](https://supabase.com) (PostgreSQL, Row-Level Security, pgvector)
-- **AI Intelligence**: [Google Gemini](https://ai.google.dev/) (RAG, agent workflows, document processing)
-- **Client Portals & UI**: Next.js 16 + React 19 + Tailwind CSS v4
+1. **Data Migration & Centralization**: Extracting data from Excel, Google Sheets, Stripe, QuickBooks, POS, and PDF archives into Supabase PostgreSQL.
+2. **AI Process Automation**: Google Gemini AI agents for automating document extraction and repetitive workflows.
+3. **Actionable Realtime Analytics**: Embedded telemetry and business dashboards without recurring BI license fees.
+4. **Predictive ML Pipelines**: Inference-ready machine learning models for forecasting churn, demand, and decision support.
+5. **Customer-Facing RAG Systems**: 24/7 AI assistants and semantic search grounded in verified business data.
+6. **Bespoke Web Portals**: High-performance client platforms deployed globally on Vercel (e.g. Sothis, Coselat, Nouriva).
 
 ---
 
