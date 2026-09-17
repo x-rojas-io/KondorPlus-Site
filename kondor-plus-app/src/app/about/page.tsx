@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { 
     Database, 
     CheckCircle, 
@@ -21,10 +22,26 @@ export const metadata: Metadata = {
 export default function AboutPage() {
     return (
         <div className="container mx-auto px-4 py-24 relative z-10">
-            {/* Header / Intro */}
+            {/* Header / Intro with Centered Rounded Photo */}
             <div className="section-title mb-16 relative">
+                {/* Rounded Centered Profile Photo */}
+                <div className="flex justify-center mb-8">
+                    <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1 bg-gradient-to-tr from-[#38BDF8] via-[#2DD4BF] to-[#818CF8] shadow-[0_0_35px_rgba(56,189,248,0.35)] group">
+                        <div className="w-full h-full rounded-full overflow-hidden relative bg-[#0B1120] border-2 border-[#0B1120]">
+                            <Image
+                                src="/images/nestor-rojas.png"
+                                alt="Nestor Rojas"
+                                fill
+                                priority
+                                unoptimized
+                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
+                    </div>
+                </div>
+
                 <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-[#38BDF8]/30 bg-[#38BDF8]/10 text-[#38BDF8] text-sm font-semibold tracking-wider uppercase backdrop-blur-md">
-                    Leadership & Engineering
+                    Leadership &amp; Engineering
                 </div>
                 <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
                     Nestor <span className="text-gradient">Rojas</span>
