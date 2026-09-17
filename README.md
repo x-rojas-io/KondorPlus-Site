@@ -24,7 +24,7 @@
 
 **Kondor Plus Consulting** is an agile data and product studio. We close the gap between expensive enterprise technology and growing businesses with our core philosophy: **"From Pipeline to Pixel"**.
 
-We engineer custom systems directly around your business data—migrating fragmented spreadsheets (Excel, Google Sheets), siloed SaaS tools (Stripe, QuickBooks, POS), and PDF archives into clean, structured PostgreSQL (Supabase) data hubs. We then layer **Google Gemini AI agents** and **Next.js 16 web applications** on top to uncover customer patterns, automate back-office operations, and drive revenue growth with zero server maintenance.
+We engineer custom systems directly around your business data migrating fragmented spreadsheets (Excel, Google Sheets), siloed SaaS tools (Stripe, QuickBooks, POS), and PDF archives into clean, structured PostgreSQL (Supabase) data hubs. We then layer **Google Gemini AI agents** and **Next.js 16 web applications** on top to uncover customer patterns, automate back-office operations, and drive revenue growth with zero server maintenance.
 
 ---
 

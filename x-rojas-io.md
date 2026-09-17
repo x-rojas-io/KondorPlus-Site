@@ -12,7 +12,7 @@
 
 **Senior Data Platform Engineer • AI Systems Architect • Founder at [Kondor Plus Consulting](https://kondorplus.net)**
 
-*Bridging High-Leverage Data Infrastructure, Generative AI & Bespoke Web Platforms — "From Pipeline to Pixel"*
+*Bridging High-Leverage Data Infrastructure, Generative AI & Bespoke Web Platforms  "From Pipeline to Pixel"*
 
 [🌐 Website](https://kondorplus.net) • [💼 Case Studies](https://kondorplus.net/projects) • [📬 Schedule a Consultation](https://kondorplus.net/contact) • [💼 LinkedIn](https://linkedin.com/in/x-rojas-io)
 

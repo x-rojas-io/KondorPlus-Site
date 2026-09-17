@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors">Bespoke Mission Web Portals</h3>
                 <p className="text-[#94A3B8] leading-relaxed text-sm">
-                  We build custom, high-speed web portals and membership platforms (like Sothis, Coselat, and Nouriva) using Next.js 16 and Vercel—seamlessly connecting your brand vision directly with your data.
+                  We build custom, high-speed web portals and membership platforms (like Sothis, Coselat, and Nouriva) using Next.js 16 and Vercel seamlessly connecting your brand vision directly with your data.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-white/5 text-xs font-semibold text-white/80 uppercase tracking-wider">

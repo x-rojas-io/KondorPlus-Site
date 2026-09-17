@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     default: "Kondor Plus Consulting | Custom Data Systems & Applied AI",
     template: "%s | Kondor Plus Consulting",
   },
-  description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth—closing the gap between expensive enterprise technology and growing businesses.",
+  description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth closing the gap between expensive enterprise technology and growing businesses.",
   openGraph: {
     title: "Kondor Plus Consulting | Custom Data Systems & Applied AI",
-    description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth—closing the gap between expensive enterprise technology and growing businesses.",
+    description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth closing the gap between expensive enterprise technology and growing businesses.",
     url: 'https://kondorplus.net',
     siteName: 'Kondor Plus Consulting',
     locale: 'en_US',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Kondor Plus Consulting | Custom Data Systems & Applied AI",
-    description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth—closing the gap between expensive enterprise technology and growing businesses.",
+    description: "We build custom systems around your data to uncover customer insights, automate workflows, and drive business growth closing the gap between expensive enterprise technology and growing businesses.",
   },
 };
 
